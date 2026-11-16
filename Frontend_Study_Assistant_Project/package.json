@@ -1,0 +1,34 @@
+{
+  "name": "adaptive-active-recall-studio",
+  "version": "1.0.0",
+  "description": "Smart AI-powered Study Assistant for Active Recall & Adaptive Learning",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test/testValidation.js && node test/testEndpoints.js && node test/testSalvageUtility.js && node test/testUseStudyGenerator.js && node test/testQuizEngine.js && node test/testSurgicalRefinement.js && node test/testLocalStorageRecovery.js && node test/testProductionAudit.js",
+    "server": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^1.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.2.0"
+  }
+}
